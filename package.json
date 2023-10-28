@@ -1,0 +1,27 @@
+{
+  "name": "speed-spec",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "init": "pnpm install"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XSUV/speed-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XSUV/speed-spec/issues"
+  },
+  "homepage": "https://github.com/XSUV/speed-spec#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "husky": "^8.0.3"
+  }
+}
