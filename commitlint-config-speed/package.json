@@ -1,0 +1,25 @@
+{
+  "name": "commitlint-config-speed",
+  "version": "1.0.0",
+  "description": "git commit规范",
+  "main": "index.js",
+  "keywords": [
+    "commitlint",
+    "commitlint-config",
+    "husky"
+  ],
+  "author": "XSUV",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XSUV/speed-spec.git"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/XSUV/speed-spec/blob/main/package/commitlint-config-speed/README.md",
+  "bugs": {
+    "url": "https://github.com/XSUV/speed-spec/issues"
+  }
+}
