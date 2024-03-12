@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-speed",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "git commit规范",
   "main": "index.js",
   "keywords": [
