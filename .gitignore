@@ -1,0 +1,16 @@
+# Package Manager
+node_modules
+
+
+# System
+.DS_Store
+
+# Bundle
+dist
+
+# local
+temp
+*.log
+
+# vitepress
+docs/.vitepress/cache

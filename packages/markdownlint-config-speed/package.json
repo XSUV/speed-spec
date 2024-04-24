@@ -1,0 +1,23 @@
+{
+  "name": "markdownlint-config-speed",
+  "version": "1.0.2",
+  "description": "markdownlint规范",
+  "main": "index.json",
+  "keywords": [
+    "markdownlint",
+    "markdown"
+  ],
+  "author": "XSUV",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/XSUV/speed-spec/tree/main/package/markdownlint-config-speed"
+  },
+  "homepage": "https://github.com/XSUV/speed-spec/tree/main/package/markdownlint-config-speed",
+  "bugs": {
+    "url": "https://github.com/XSUV/speed-spec/issues"
+  },
+  "peerDependencies": {
+    "markdownlint": "^0.28.1"
+  }
+}

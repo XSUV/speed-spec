@@ -1,0 +1,26 @@
+{
+  "name": "speed-spec",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+
+    "prepare": "husky install",
+    "init": "pnpm install"
+
+  },
+  "author": "XSUV",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XSUV/speed-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/XSUV/speed-spec/issues"
+  },
+  "homepage": "https://github.com/XSUV/speed-spec",
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.2",
+    "husky": "^8.0.3"
+  }
+}

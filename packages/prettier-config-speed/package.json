@@ -1,0 +1,19 @@
+{
+    "name": "prettier-config-speed",
+    "version": "1.0.0",
+    "description": "prettier",
+    "main": "index.js",
+    "keywords": [
+      "prettier",
+      "prettier-config"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/XSUV/speed-spec/tree/main/package/prettier-config-speed"
+      },
+      "homepage": "https://github.com/XSUV/speed-spec/tree/main/package/prettier-config-speed",
+      "bugs": {
+        "url": "https://github.com/XSUV/speed-spec/issues"
+      },
+    "license": "MIT"
+  }
