@@ -10,7 +10,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/XSUV/speed-spec/tree/main/packages/markdownlint-config-speed"
+    "url": "https://github.com/XSUV/speed-spec"
   },
   "homepage": "https://github.com/XSUV/speed-spec/tree/main/packages/markdownlint-config-speed",
   "bugs": {
