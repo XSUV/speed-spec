@@ -1,6 +1,6 @@
 {
   "name": "commitlint-config-speed",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "git commit规范",
   "main": "index.js",
   "keywords": [
@@ -8,13 +8,12 @@
     "commitlint-config",
     "husky"
   ],
-  "author": "XSUV",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/XSUV/speed-spec/tree/main/package/commitlint-config-speed"
+    "url": "https://github.com/XSUV/speed-spec/tree/main/packages/commitlint-config-speed"
   },
-  "homepage": "https://github.com/XSUV/speed-spec/tree/main/package/commitlint-config-speed",
+  "homepage": "https://github.com/XSUV/speed-spec/tree/main/packages/commitlint-config-speed",
   "bugs": {
     "url": "https://github.com/XSUV/speed-spec/issues"
   }

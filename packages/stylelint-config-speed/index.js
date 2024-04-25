@@ -1,101 +1,93 @@
-
 module.exports = {
-  defaultSeverity: 'warning',
+  defaultSeverity: 'warning', // 默认严重性级别设置为警告
   rules: {
-    'block-no-empty': null,
-    'color-no-invalid-hex': true,
-    'comment-no-empty': true,
+    'block-no-empty': null, // 禁用规则：不允许出现空的代码块
+    'color-no-invalid-hex': true, // 开启规则：颜色值不能为无效的十六进制
+    'comment-no-empty': true, // 开启规则：不允许出现空的注释
     'declaration-block-no-duplicate-properties': [
-      true,
+      true, // 开启规则：声明块中不允许有重复的属性
       {
-        ignore: ['consecutive-duplicates-with-different-values'],
+        ignore: ['consecutive-duplicates-with-different-values'], // 但忽略连续的重复属性，只要它们的值不同
       },
     ],
-    'declaration-block-no-shorthand-property-overrides': true,
-    'font-family-no-duplicate-names': true,
-    'font-family-no-missing-generic-family-keyword': null, // @reason 使用 iconfont 字体时会报错
-    'function-calc-no-unspaced-operator': true,
-    'function-linear-gradient-no-nonstandard-direction': true,
-    'keyframe-declaration-no-important': true,
-    'media-feature-name-no-unknown': true,
-    'no-descending-specificity': null, // @reason 实际有很多这样用的，且多数人熟悉 css 优先级
-    'no-duplicate-at-import-rules': true,
-    'no-duplicate-selectors': true,
-    'no-empty-source': null,
-    'no-invalid-double-slash-comments': true,
-    'property-no-unknown': true,
+    'declaration-block-no-shorthand-property-overrides': true, // 开启规则：简写形式的属性不能覆盖相关的完整形式的属性
+    'font-family-no-duplicate-names': true, // 开启规则：字体族名称不允许重复
+    'font-family-no-missing-generic-family-keyword': null, // 禁用规则：字体族名称列表中必须有一个通用字体族关键词
+    'function-calc-no-unspaced-operator': true, // 开启规则：calc函数中的操作符后面必须有空格
+    'function-linear-gradient-no-nonstandard-direction': true, // 开启规则：线性渐变的方向值不能为非标准值
+    'keyframe-declaration-no-important': true, // 开启规则：关键帧声明中不能使用!important
+    'media-feature-name-no-unknown': true, // 开启规则：媒体特性名称不能为未知
+    'no-descending-specificity': null, // 禁用规则：不允许选择器具有降低的特异性
+    'no-duplicate-at-import-rules': true, // 开启规则：不允许重复的@import规则
+    'no-duplicate-selectors': true, // 开启规则：不允许重复的选择器
+    'no-empty-source': null, // 禁用规则：源码文件不能为空
+    'no-invalid-double-slash-comments': true, // 开启规则：不允许无效的双斜线注释
+    'property-no-unknown': true, // 开启规则：属性不能为未知
     'selector-pseudo-class-no-unknown': [
-      true,
+      true, // 开启规则：伪类选择器不能为未知
       {
-        ignorePseudoClasses: ['global', 'local', 'export'],
+        ignorePseudoClasses: ['global', 'local', 'export', 'v-deep', 'deep'], // 忽略这些自定义的伪类选择器
       },
     ],
-    'selector-pseudo-element-no-unknown': true,
+    'selector-pseudo-element-no-unknown': true, // 开启规则：伪元素选择器不能为未知
     'selector-type-no-unknown': [
-      true,
+      true, // 开启规则：类型选择器不能为未知
       {
-        ignore: ['custom-elements'],
-        ignoreTypes: miniappTags,
+        ignore: ['custom-elements'], // 忽略自定义元素
+        // ignoreTypes: miniappTags, // 忽略小程序标签
       },
     ],
-    'string-no-newline': true,
+    'string-no-newline': true, // 开启规则：字符串内不允许有换行符
     'unit-no-unknown': [
-      true,
+      true, // 开启规则：单位不能为未知
       {
-        ignoreUnits: ['rpx'],
+        ignoreUnits: ['rpx'], // 忽略这些单位
       },
     ],
 
-    /**
+       /**
      * Stylistic issues
      * @link https://stylelint.io/user-guide/rules/list#stylistic-issues
      */
-    'color-hex-length': 'short',
-    'comment-whitespace-inside': 'always',
-    'declaration-block-single-line-max-declarations': 1,
+    'color-hex-length': 'short', // 颜色值的十六进制长度使用简写形式
+    'comment-whitespace-inside': 'always', // 注释内始终要有空白
+    'declaration-block-single-line-max-declarations': 1, // 单行声明块中最多只能有一个声明
     'length-zero-no-unit': [
-      true,
+      true, // 开启规则：长度值为0时不使用单位
       {
-        ignore: ['custom-properties'],
+        ignore: ['custom-properties'], // 忽略自定义属性
       },
     ],
-    'selector-max-id': 0,
+    'selector-max-id': 0, // 选择器中ID的最大数量为0（禁止使用ID选择器）
   },
   overrides: [
-    // scss language support
+    // 对SCSS语言的支持
     {
-      files: ['*.scss', '**/*.scss'],
-      customSyntax: 'postcss-scss',
-      plugins: ['stylelint-scss'],
+      files: ['*.scss', '**/*.scss'], // 指定文件匹配模式
+      customSyntax: 'postcss-scss', // 使用SCSS的语法解析器
+      plugins: ['stylelint-scss'], // 使用stylelint的SCSS插件
       rules: {
-        // conflict css rules to disable
-        // turn off CSS @ rule check, to support @include, @mixin usage in scss
-        'at-rule-no-unknown': null,
+        'at-rule-no-unknown': null, // 禁用规则：不检查未知的@规则，以支持SCSS中的@include和@mixin等
 
-        // stylelint-scss rules
+        // stylelint-scss的规则
         // https://github.com/stylelint-less/stylelint-less
-
-        'scss/double-slash-comment-whitespace-inside': 'always',
+        'scss/double-slash-comment-whitespace-inside': 'always', // 开启规则：SCSS中双斜线注释内必须始终有空白
       },
     },
-    // less language support
+    // 对LESS语言的支持
     {
-      files: ['*.less', '**/*.less'],
-      customSyntax: 'postcss-less',
-      plugins: ['stylelint-less'],
+      files: ['*.less', '**/*.less'], // 指定文件匹配模式
+      customSyntax: 'postcss-less', // 使用LESS的语法解析器
+      plugins: ['stylelint-less'], // 使用stylelint的LESS插件
       rules: {
-        // conflict css rules to disable
-        // turn off CSS @ rule check, to support @ variable usage in less
-        'at-rule-no-unknown': null,
+        'at-rule-no-unknown': null, // 禁用规则：不检查未知的@规则，以支持LESS中的@变量等
 
-        // stylelint-less rules
+        // stylelint-less的规则
         // https://github.com/stylelint-less/stylelint-less
-
-        // don't allow duplicate variable declarations
-        'less/no-duplicate-variables': true,
+        'less/no-duplicate-variables': true, // 开启规则：不允许变量声明重复
       },
     },
   ],
-  // don't support css-in-js because there are too many different implementations
-  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
+  // 不支持CSS-in-JS，因为实现方式太多、太不同
+  ignoreFiles: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'], // 忽略所有JS和TS文件
 };
