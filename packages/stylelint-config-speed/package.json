@@ -9,9 +9,9 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/XSUV/speed-spec"
+        "url": "https://github.com/XSUV/speed-spec/tree/main/packages/stylelint-config-speed"
       },
-      "homepage": "https://github.com/XSUV/speed-spec/tree/main/package/stylelint-config-speed",
+      "homepage": "https://github.com/XSUV/speed-spec/tree/main/packages/stylelint-config-speed",
       "bugs": {
         "url": "https://github.com/XSUV/speed-spec/issues"
       },
