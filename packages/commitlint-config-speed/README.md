@@ -8,35 +8,36 @@
 
 ```bash
 npm install commitlint-config-speed @commitlint/cli --save-dev
+
+npm install husky@8 --save-dev
+
 ```
 
 ## 使用
 
-在 `commitlint.config.js` 或者`.commitlintrc.js`中集成本包:
 
-```javascript
-module.exports = {
-  extends: ['commitlint-config-speed']
-};
+
+在 `package.json`中集成本包:
+
+```json
+  "commitlint": {
+    "extends": [
+      "speed"
+    ]
+  }
 ```
 
-## 设置 git hook
+或者可以使用命令行在 `package.json`中添加
 
-可通过 [husky](https://www.npmjs.com/package/husky) 设置在 `git commit` 时触发 `commitlint`。
-
-首先安装 husky：
-
-```bash
-npm install husky --save-dev
+```sh
+  npm pkg set commitlint.extends=["speed"]
 ```
 
-然后执行添加`commit-msg`:
+## 测试
 
-```bash
-npx husky add .husky/commit-msg 'npx --no -- commitlint --edit $1'
+```sh
+   git commit -m "temp: 修改"
 ```
-
-更多信息可参考 [commitlint 文档](https://commitlint.js.org/#/guides-local-setup?id=install-husky)。
 
 ### `type-enum`
 

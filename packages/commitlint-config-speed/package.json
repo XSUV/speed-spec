@@ -5,8 +5,7 @@
   "main": "index.js",
   "keywords": [
     "commitlint",
-    "commitlint-config",
-    "husky"
+    "commitlint-config"
   ],
   "license": "MIT",
   "repository": {

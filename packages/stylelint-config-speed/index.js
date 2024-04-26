@@ -1,6 +1,11 @@
 module.exports = {
   defaultSeverity: 'warning', // 默认严重性级别设置为警告
+  extends: [
+    "stylelint-config-standard",
+    "stylelint-config-recess-order"
+  ],
   rules: {
+    "declaration-property-value-no-unknown": true, // 开启规则：声明属性值无未知
     'block-no-empty': null, // 禁用规则：不允许出现空的代码块
     'color-no-invalid-hex': true, // 开启规则：颜色值不能为无效的十六进制
     'comment-no-empty': true, // 开启规则：不允许出现空的注释
@@ -51,7 +56,6 @@ module.exports = {
      */
     'color-hex-length': 'short', // 颜色值的十六进制长度使用简写形式
     'comment-whitespace-inside': 'always', // 注释内始终要有空白
-    'declaration-block-single-line-max-declarations': 1, // 单行声明块中最多只能有一个声明
     'length-zero-no-unit': [
       true, // 开启规则：长度值为0时不使用单位
       {
@@ -86,6 +90,11 @@ module.exports = {
         // https://github.com/stylelint-less/stylelint-less
         'less/no-duplicate-variables': true, // 开启规则：不允许变量声明重复
       },
+    },
+    // 对html|vue的支持
+    {
+      files: ["**/*.(html|vue)"],
+      customSyntax: "postcss-html",
     },
   ],
   // 不支持CSS-in-JS，因为实现方式太多、太不同

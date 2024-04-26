@@ -4,12 +4,14 @@
   "description": "",
   "private": true,
   "scripts": {
-
-    "prepare": "husky install",
     "init": "pnpm install"
-
   },
   "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "speed"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/XSUV/speed-spec.git"
@@ -20,6 +22,8 @@
   "homepage": "https://github.com/XSUV/speed-spec",
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
-    "husky": "^8.0.3"
+    "commitlint-config-speed": "link:packages/commitlint-config-speed",
+    "husky": "^8.0.3",
+    "stylelint": "^16.4.0"
   }
 }
