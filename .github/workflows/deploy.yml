@@ -46,6 +46,10 @@ jobs:
           pnpm run docs:build
         env:
           NODE_OPTIONS: '--max_old_space_size=4096'
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/.vitepress/dist
 
   # 部署工作
   deploy:
