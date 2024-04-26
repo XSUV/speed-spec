@@ -19,14 +19,12 @@
   "license": "MIT",
   "scripts": {
     "lint": "eslint ./",
-    "test": "rive test",
     "print-config": "eslint --print-config ./index.js > ./print-config.json",
     "prepublishOnly": "npm run test"
   },
   "eslintConfig": {
     "extends": [
-      "speed/node",
-      "plugin:prettier/recommended"
+      "speed/node"
     ]
   },
   "peerDependencies": {
