@@ -7,8 +7,7 @@ const specTab = {
     { text: 'CSS 编码规范', link: '/coding/css' },
     { text: 'JavaScript 编码规范', link: '/coding/javascript' },
     { text: 'Typescript 编码规范', link: '/coding/typescript' },
-    { text: 'Node 编码规范', link: '/coding/node' },
-    { text: '测试', link: '/coding/link' }
+    { text: 'Node 编码规范', link: '/coding/node' }
   ]
 };
 
