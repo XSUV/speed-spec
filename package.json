@@ -4,7 +4,10 @@
   "description": "",
   "private": true,
   "scripts": {
-    "init": "pnpm install"
+    "init": "pnpm install",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "license": "MIT",
   "commitlint": {
@@ -24,6 +27,7 @@
     "@commitlint/cli": "^17.7.2",
     "commitlint-config-speed": "link:packages/commitlint-config-speed",
     "husky": "^8.0.3",
-    "stylelint": "^16.4.0"
+    "stylelint": "^16.4.0",
+    "vitepress": "^1.1.3"
   }
 }
