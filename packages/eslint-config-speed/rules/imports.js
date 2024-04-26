@@ -16,7 +16,7 @@ module.exports = {
      */
 
     // ensure imports point to files/modules that can be resolved
-    'import/no-unresolved': 'error',
+    'import/no-unresolved': 'off',
 
     // ensure named imports coupled with named exports
     'import/named': 'error',

@@ -7,7 +7,7 @@
 module.exports = {
   plugins: ['react', 'react-hooks'],
   rules: {
-    // https://github.com/alibaba/f2e-spec/issues/95
+
     // 防止 React 组件定义中缺少 displayName
     'react/display-name': ['warn', { ignoreTranspilerName: false }],
 

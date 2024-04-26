@@ -19,7 +19,7 @@ module.exports = {
     'no-cond-assign': ['error', 'always'],
 
     // 生产环境禁止使用 console
-    'no-console': 'warn',
+    'no-console': 'off',
 
     // 不要在条件表达式中使用常量
     'no-constant-condition': 'warn',
