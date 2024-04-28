@@ -3,6 +3,7 @@ group: Coding Style
 order: 1
 ---
 
+
 # HTML Coding Specification
 
 > 注：本篇规约无配套的 Lint 工具包
@@ -63,7 +64,6 @@ order: 1
 
   设置 viewport-fit 设置为“cover”来兼容 iPhone X 的刘海屏，[了解更多](https://webkit.org/blog/7929/designing-websites-for-iphone-x/) 。
 
-
   ```html
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, viewport-fit=cover" />
   ```
@@ -71,7 +71,7 @@ order: 1
 ### 1.4 资源加载
 
 - 1.4.1 `recommended` 引入 CSS 和 JavaScript 时无需指定 type。
-  根据 HTML5 规范，引入 CSS 和 JavaScript 时通常不需要指明 type，因为 [text/css](https://html.spec.whatwg.org/multipage/obsolete.html#attr-style-type) 和 [text/javascript](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type) 分别是他们的默认值。
+  根据 HTML5 规范，引入 CSS 和 JavaScript 时通常不需要指明 type，因为 [text/CSS](https://html.spec.whatwg.org/multipage/obsolete.html#attr-style-type) 和 [text/JavaScript](https://html.spec.whatwg.org/multipage/scripting.html#attr-script-type) 分别是他们的默认值。
 
   ```html
   <!-- bad -->
@@ -96,7 +96,6 @@ order: 1
   > 在 HTTP2（Chrome 浏览器 69 版本之后，Firefox 和 Edge）中可以在 body 中使用 link 标签引入样式文件，但不推荐在 body 中使用 `<style>` 标签的内联样式。**`<link rel="stylesheet">` 将会阻止后续内容的渲染，而不是整个页面**。
 
   除了基础库等必须要在 DOM 加载之前运行的 JavaScript 脚本，其他都在靠近 `body` 结束标签前引入，以防止出现页面渲染的阻塞，[了解更多](https://developer.yahoo.com/performance/rules.html#js_bottom)。
-
 
   ```html
   <!-- bad -->

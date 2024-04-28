@@ -27,6 +27,7 @@
     "@commitlint/cli": "^17.7.2",
     "commitlint-config-speed": "link:packages/commitlint-config-speed",
     "husky": "^8.0.3",
+    "markdown-it": "^14.1.0",
     "stylelint": "^16.4.0",
     "vitepress": "^1.1.3"
   }

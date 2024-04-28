@@ -7,7 +7,8 @@ const specTab = {
     { text: 'CSS 编码规范', link: '/coding/css' },
     { text: 'JavaScript 编码规范', link: '/coding/javascript' },
     { text: 'Typescript 编码规范', link: '/coding/typescript' },
-    { text: 'Node 编码规范', link: '/coding/node' }
+    { text: 'Node 编码规范', link: '/coding/node' },
+    { text: '测试文档', link: '/coding/test' }
   ]
 };
 
@@ -32,7 +33,6 @@ export default defineConfig({
     },
     nav: [
       { text: '主页', link: '/' },
-      // { text: 'vitepress', link: '/vitepress' },
       specTab
     ],
 
