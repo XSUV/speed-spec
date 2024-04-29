@@ -1,12 +1,12 @@
 # eslint-config-speed
 
-## 手动接入
+## 安装
 
 ```bash
 npm install --save-dev eslint@8 eslint-config-speed
 ```
 
-## 项目配置
+## 使用
 
 ### 基础 JavaScript 项目
 
@@ -14,7 +14,7 @@ npm install --save-dev eslint@8 eslint-config-speed
 
 ESLint 配置：
 
-```json
+```js
 {
   "extends": ["eslint-config-speed"]
 }
@@ -170,6 +170,14 @@ ESLint 配置：
 ## 将风格问题降级
 
 为了保证一致的编码风格，本包中大量风格相关的规则被设为了 error 级别，以引起开发者的足够重视。如果你觉得风格问题不足以是 error 级别（有些用户根据 ESLint error 进行流程卡点），本包还提供了一套名为 'essential' 的配置文件，这套配置将所有风格问题降级为 warn 级别，仅将必要问题报告为 error，引用方式为在相应配置的 `eslint-config-speed` 后面加上 `/essential`，如对 JS React 项目为 `eslint-config-speed/essential/react`、对 TS Vue 项目为 `eslint-config-speed/essential/typescript/vue`
+
+## 手动eslint
+
+```json
+ "scripts": {
+    "lint:eslint": "eslint --cache --max-warnings 0  \"src/**/*.{vue,js,jsx,ts,tsx}\" --fix",
+ }
+```
 
 ## 了解更多
 

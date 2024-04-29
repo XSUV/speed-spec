@@ -19,8 +19,9 @@ npm install stylelint-config-speed stylelint  --save-dev
   };
 ```
 
-```json
+`package.json`中可以添加以下内容，用于手动运行`stylelint`
 
+```json
   "scripts": {
     "lint:stylelint": "stylelint src/**/*.{html,vue,css,sass,scss,less} -f unix --fix",
   },

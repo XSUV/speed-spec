@@ -3,14 +3,26 @@ import { defineConfig } from 'vitepress';
 const specTab = {
   text: '编码规范',
   items: [
+    { text: '通用编码规范', link: '/coding/common' },
     { text: 'HTML 编码规范', link: '/coding/html' },
     { text: 'CSS 编码规范', link: '/coding/css' },
     { text: 'JavaScript 编码规范', link: '/coding/javascript' },
     { text: 'Typescript 编码规范', link: '/coding/typescript' },
     { text: 'Node 编码规范', link: '/coding/node' },
-    { text: '测试文档', link: '/coding/test' }
   ]
 };
+const npmTab = {
+  text: 'npm包',
+  link: '/npm'
+}
+const engineeringTab = {
+  text: '工程规范',
+  items: [
+    { text: 'Git 规范', link: '/engineering/git' },
+    { text: '文档规范', link: '/engineering/doc' },
+    { text: 'CHANGELOG 规范', link: '/engineering/changelog' },
+  ],
+}
 
 export default defineConfig({
   title: 'speed-spec',
@@ -33,10 +45,12 @@ export default defineConfig({
     },
     nav: [
       { text: '主页', link: '/' },
-      specTab
+      specTab,
+      engineeringTab,
+      npmTab,
     ],
 
-    sidebar: [specTab],
+    sidebar: [specTab, engineeringTab, npmTab],
     editLink: {
       pattern: 'https://github.com/xsuv/speed-spec/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页'

@@ -24,7 +24,7 @@ tags:
   ```css
   /* bad */
   .selector {
-    margin-top: 10px
+    margin-top: 10px;
     padding-left: 15px
   }
 
@@ -627,4 +627,4 @@ tags:
 - [Code Guide by @mdo](http://codeguide.co)
 - [Airbnb CSS / Sass Styleguide](https://github.com/airbnb/css)
 - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
-- [spec css-style-guide](https://github.com/ecomfe/spec/blob/master/css-style-guide.md)
+- [spec CSS-style-guide](https://github.com/ecomfe/spec/blob/master/css-style-guide.md)
