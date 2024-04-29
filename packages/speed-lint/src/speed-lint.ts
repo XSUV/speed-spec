@@ -39,7 +39,7 @@ if (process.argv.length > 2 && !process.argv.includes('init')) {
     // 空行
     console.log(' ');
 
-    intro(`${chalk.bold(chalk.cyan('🚀 阿里巴巴前端规约'))} ${chalk.dim(packageJson.version)}`);
+    intro(`${chalk.bold(chalk.cyan('🚀 快速引入前端规范 https://github.com/XSUV/speed-spec'))} ${chalk.dim(packageJson.version)}`);
 
     const project = await text({
       message: '📁 选择项目位置',
