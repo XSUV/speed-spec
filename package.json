@@ -10,11 +10,6 @@
     "docs:preview": "vitepress preview docs"
   },
   "license": "MIT",
-  "commitlint": {
-    "extends": [
-      "speed"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/XSUV/speed-spec.git"
@@ -23,12 +18,16 @@
     "url": "https://github.com/XSUV/speed-spec/issues"
   },
   "homepage": "https://github.com/XSUV/speed-spec",
+  "commitlint": {
+    "extends": [
+      "speed"
+    ]
+  },
   "devDependencies": {
     "@commitlint/cli": "^17.7.2",
     "commitlint-config-speed": "link:packages/commitlint-config-speed",
     "husky": "^8.0.3",
     "markdown-it": "^14.1.0",
-    "stylelint": "^16.4.0",
     "vitepress": "^1.1.3"
   }
 }

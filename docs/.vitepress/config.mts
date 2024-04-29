@@ -13,7 +13,13 @@ const specTab = {
 };
 const npmTab = {
   text: 'npm包',
-  link: '/npm'
+  items: [
+    { text: 'commitlint-config-speed', link: '/npm/commitlint' },
+    { text: 'markdownlint-config-speed', link: '/npm/markdownlint' },
+    { text: 'stylelint-config-speed', link: '/npm/stylelint' },
+    { text: 'eslint-config-speed', link: '/npm/eslint' },
+    { text: 'prettier-config-speed', link: '/npm/prettier' },
+  ]
 }
 const engineeringTab = {
   text: '工程规范',
@@ -40,6 +46,7 @@ export default defineConfig({
     returnToTopLabel: '返回顶部',
     outlineTitle: '本页目录',
     lastUpdatedText: '最后更新时间',
+    logo: '/logo.png',
     search: {
       provider: 'local'
     },
