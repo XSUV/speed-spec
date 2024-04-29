@@ -111,7 +111,7 @@ importers:
         specifier: ^1.3.0
         version: 1.3.0
       prettier-config-speed:
-        specifier: workspace:^
+        specifier: ^1.1.1
         version: link:../prettier-config-speed
     devDependencies:
       '@mdx-js/react':

@@ -19,6 +19,7 @@ const npmTab = {
     { text: 'stylelint-config-speed', link: '/npm/stylelint' },
     { text: 'eslint-config-speed', link: '/npm/eslint' },
     { text: 'prettier-config-speed', link: '/npm/prettier' },
+    { text: 'speed-lint', link: '/npm/cli' },
   ]
 }
 const engineeringTab = {
