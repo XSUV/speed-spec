@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{cjs,cts,js,jsx,mjs,mts,ts,tsx,vue}": "eslint --fix",
+    <% if (stylelint) { %>
+    "*.{css,less,scss}": "stylelint --fix",
+    <% } %>
+    <% if (prettier) { %>
+    "*.{cjs,css,cts,html,js,json,jsx,less,md,mjs,mts,scss,ts,tsx,vue,yaml,yml}": "prettier --write",
+    <% } %>
+  },
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^15.2.2"
+  }
+}

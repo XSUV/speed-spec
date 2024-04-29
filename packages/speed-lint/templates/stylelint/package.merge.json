@@ -1,0 +1,9 @@
+{
+  "stylelint": {
+    "extends": ["stylelint-config-speed"]
+  },
+  "devDependencies": {
+    "stylelint": "^16.0.2",
+    "stylelint-config-speed": "^1.0.0"
+  }
+}

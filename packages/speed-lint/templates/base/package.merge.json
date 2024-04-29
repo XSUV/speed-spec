@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "lint": "eslint .<% if (stylelint) { %> && stylelint \"**/*.{css,less,scss}\"<% } %>",
+    "lint:fix": "<% if (prettier) { %>prettier --write . && <% } %>eslint --fix .<% if (stylelint) { %> && stylelint --fix \"**/*.{css,less,scss}\"<% } %>"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-speed": "^1.0.0"
+  }
+}

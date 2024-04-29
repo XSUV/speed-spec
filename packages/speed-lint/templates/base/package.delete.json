@@ -1,0 +1,16 @@
+{
+  "husky": null,
+  "eslintConfig": {
+    "extends": null
+  },
+  "stylelint": {
+    "extends": null
+  },
+  "commitlint": {
+    "extends": null
+  },
+  "devDependencies": {
+    "speed-lint": null,
+    "tslint": null
+  }
+}
