@@ -1,6 +1,6 @@
 {
   "name": "prettier-config-speed",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "prettier",
   "main": "index.js",
   "keywords": [
@@ -16,10 +16,7 @@
     "url": "https://github.com/XSUV/speed-spec/issues"
   },
   "license": "MIT",
-  "dependencies": {
-    "husky": "^8.0.3"
-  },
   "devDependencies": {
-    "husky": "^8.0.3"
+    "prettier": "^3.2.5"
   }
 }
