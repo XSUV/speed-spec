@@ -1,7 +1,8 @@
 {
   "name": "prettier-config-speed",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "prettier",
+  "type": "module",
   "main": "index.js",
   "keywords": [
     "prettier",
