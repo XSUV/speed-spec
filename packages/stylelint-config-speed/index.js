@@ -67,6 +67,19 @@ module.exports = {
       },
     ],
     'selector-max-id': null, // 选择器中ID的最大数量为0（禁止使用ID选择器）
+    "import-notation": null,
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        ignorePseudoElements: ["v-deep"]
+      }
+    ],
+    "annotation-no-unknown": [
+      true,
+      {
+        ignoreAnnotations: ["/default/"]
+      }
+    ],
   },
   overrides: [
     // 对SCSS语言的支持

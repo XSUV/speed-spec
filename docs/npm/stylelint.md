@@ -26,3 +26,19 @@ npm install stylelint-config-speed stylelint  --save-dev
     "lint:stylelint": "stylelint src/**/*.{html,vue,css,sass,scss,less} -f unix --fix",
   },
 ```
+
+## 配合`prettier`使用
+
+```sh
+npm install prettier stylelint-prettier --save-dev
+```
+
+```js
+  module.exports = {
+    extends: 'stylelint-config-speed',
+    plugins: ["stylelint-prettier"],
+    rules: {
+      "prettier/prettier": true,
+    }
+  };
+```
