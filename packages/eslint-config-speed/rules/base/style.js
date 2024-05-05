@@ -285,7 +285,7 @@ module.exports = {
     'no-negated-condition': 'off',
 
     // 不要使用嵌套的三元表达式
-    'no-nested-ternary': 'error',
+    // 'no-nested-ternary': 'error',
 
     // 使用字面量创建对象
     'no-new-object': 'error',

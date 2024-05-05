@@ -4,7 +4,7 @@ module.exports = {
     'accessor-pairs': 'off',
 
     // 某些数组方法的回调函数中必须包含 return 语句
-    'array-callback-return': ['error', { allowImplicit: true }],
+    // 'array-callback-return': ['error', { allowImplicit: true }],
 
     // 把 var 语句看作是在块级作用域范围之内，不能在块外使用
     'block-scoped-var': 'error',
@@ -171,23 +171,24 @@ module.exports = {
     'no-octal-escape': 'error',
 
     // 不要修改函数参数
-    'no-param-reassign': [
-      'warn',
-      {
-        props: true,
-        ignorePropertyModificationsFor: [
-          'acc', // for reduce accumulators
-          'e', // for e.returnvalue
-          'ctx', // for Koa routing
-          'draft', // for immer
-          'req', // for Express requests
-          'request', // for Express requests
-          'res', // for Express responses
-          'response', // for Express responses
-          '$scope', // for Angular 1 scopes
-        ],
-      },
-    ],
+    'no-param-reassign': 'off',
+    // 'no-param-reassign': [
+    //   'warn',
+    //   {
+    //     props: true,
+    //     ignorePropertyModificationsFor: [
+    //       'acc', // for reduce accumulators
+    //       'e', // for e.returnvalue
+    //       'ctx', // for Koa routing
+    //       'draft', // for immer
+    //       'req', // for Express requests
+    //       'request', // for Express requests
+    //       'res', // for Express responses
+    //       'response', // for Express responses
+    //       '$scope', // for Angular 1 scopes
+    //     ],
+    //   },
+    // ],
 
     // 禁止使用 __proto__ 属性
     'no-proto': 'error',
@@ -199,7 +200,7 @@ module.exports = {
     'no-restricted-properties': 'off',
 
     // 禁止在 return 语句中赋值
-    'no-return-assign': ['error', 'always'],
+    // 'no-return-assign': ['error', 'always'],
 
     // 禁止不必要的 return await
     'no-return-await': 'off',
